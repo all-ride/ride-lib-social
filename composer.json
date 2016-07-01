@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "ride/lib-html": ">=0.3.0",
+        "ride/lib-html": ">=0.3.0"
     },
     "autoload": {
         "psr-0": {
