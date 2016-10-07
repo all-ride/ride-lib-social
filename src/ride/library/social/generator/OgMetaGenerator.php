@@ -79,12 +79,12 @@ class OgMetaGenerator implements MetaGenerator {
             $type = self::TYPE_WEBSITE;
         }
 
-        $meta[] = $this->createMeta('og:type', $type);
-        $meta[] = $this->createMeta('og:url', $url);
         $meta[] = $this->createMeta('og:title', $title);
         if ($description) {
             $meta[] = $this->createMeta('og:description', $description);
         }
+        $meta[] = $this->createMeta('og:url', $url);
+        $meta[] = $this->createMeta('og:type', $type);
 
         if ($images) {
             foreach ($images as $image) {
